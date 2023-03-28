@@ -99,7 +99,7 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
-
+INSERT INTO drivers VALUES (5, 'Carissa Wu', 'American', 3)
 
 
 -- SQLBook: Markup
@@ -113,7 +113,7 @@ Extracting columns from table
 -- SELECT extracts certain COLUMNS
 -- FROM is used to indicate the source table
 
-SELECT driver_id nationality FROM drivers;
+SELECT driver_id, nationality FROM drivers;
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -188,6 +188,8 @@ with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
 
+SELECT driver_Id, nationality FROM drivers
+WHERE victories > 60;
 
 
 
